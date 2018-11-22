@@ -1,0 +1,35 @@
+<mat-toolbar color="primary">
+    <a routerLink='/store'>
+        <button mat-icon-button>
+            <mat-icon>home</mat-icon>
+        </button>
+    </a>
+  <span>SchoolBux</span>
+    <div>
+        <a routerLink='/wishlist'>
+            <button>
+                <mat-icon>assignment</mat-icon> Wishlist
+            </button>
+        </a>
+        <a routerLink='/cart'> 
+            <button>
+                <mat-icon>shopping_cart</mat-icon>
+                <span color="accent" class="cart-counter">5</span>
+                Cart
+            </button>
+        </a>
+        <button mat-icon-button [mat-menu-trigger-for]="menu">
+            <mat-icon>account_circle</mat-icon> kmurgic
+        </button>
+    </div>
+  
+</mat-toolbar>
+<mat-menu  class="menu" #menu="matMenu">
+  <a routerLink='/account'>
+    <button class="menu-button" mat-menu-item>My Account</button>
+  </a>
+  <a routerLink='/purchased'>
+    <button class="menu-button" mat-menu-item>My Purchased Items</button> 
+  </a>
+  <button class="menu-button" mat-menu-item>Logout</button>
+</mat-menu>

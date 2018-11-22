@@ -1,0 +1,30 @@
+.cart-counter {
+    padding: 2px;
+    border-radius: 100%;
+    background-color: green;
+    border: 1px solid white;
+    vertical-align: top;
+    position: relative;
+    top: 3px;
+    margin-left: -3px;
+}
+
+button {
+    background: none;
+    border: none;
+    color: white;
+}
+
+button:focus {
+    outline: 1px solid #CCC;
+}
+
+.menu-button {
+    color: black;
+    border: none;
+    outline: none;
+}
+
+.menu-button:focus {
+    outline: none;
+}

@@ -1,0 +1,24 @@
+<div id="store">
+  <mat-card *ngFor="let item of items" class="store-item-card">
+    <mat-card-header>
+      <div mat-card-avatar class="store-item-header"></div>
+      <mat-card-title>{{item.title}}</mat-card-title>
+      <mat-card-subtitle>{{item.price}} School Bux</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src={{item.image}} alt={{item.imageAlt}}>
+    <mat-card-content>
+      <p>
+        {{item.description}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      QTY: <input size='1' max='9' value='1' type='number'/>
+      <button mat-button>ADD TO CART</button>
+      <button mat-button>ADD TO WISHLIST</button>
+    </mat-card-actions>
+  </mat-card>
+  <div class='empty-flex'></div>
+  <div class='empty-flex'></div>
+  <div class='empty-flex'></div>
+  <div class='empty-flex'></div>
+</div>
